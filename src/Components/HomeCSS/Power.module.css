@@ -1,0 +1,52 @@
+.powerSystem {
+    background-color: #1c1c1e;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    
+    max-width: max-content 1000%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .timeFrame {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .timeFrame span {
+    cursor: pointer;
+  }
+  
+  .timeFrame .active {
+    color: #00ff00;
+  }
+  
+  .totalUsage {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .totalUsage h2 {
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  .totalUsage p {
+    color: #ff0000;
+  }
+  
+  .chartContainer {
+    margin-bottom: 20px;
+  }
+  
+  .usagePerRoom {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .usagePerRoom div {
+    margin-bottom: 10px;
+  }
+  

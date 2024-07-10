@@ -1,0 +1,65 @@
+/* footer.module.css */
+
+.footer {
+    background-color: #575555;
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    position: relative;
+    z-index: 1;
+   
+}
+.styles .head{
+    padding: 0;
+    margin-bottom: 0;
+}
+.styles .head .em{
+    margin-top: 0;
+}
+.footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    transform: perspective(500px) rotateX(0deg);
+    transition: transform 0.3s;
+}
+
+.footer h3:hover {
+    transform: perspective(500px) rotateX(15deg);
+}
+
+.footer p {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+}
+
+.footer .socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer .socials li {
+    display: inline;
+}
+
+.footer .socials li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s, transform 0.3s;
+    transform: perspective(500px) rotateX(0deg);
+}
+
+.footer .socials li a:hover {
+    color: #f0a500;
+    transform: perspective(500px) rotateX(15deg);
+}
+
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+}

@@ -1,0 +1,83 @@
+/* camerasystem.module.css */
+.cameraSystem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: black;
+    z-index: -10000;
+    
+}
+
+.headerc {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.headerc h1 {
+    margin: 0;
+}
+
+.headerc nav {
+    margin-top: 1rem;
+}
+
+.headerc button {
+    background: none;
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.headerc button:hover {
+    background: #fff;
+    color: #ffffff;
+}
+
+.cameraList {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    width: 100%;
+}
+
+.cameraCard {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: perspective(1000px);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.cameraCard:hover {
+    transform: rotateY(20deg);
+}
+
+.cameraImage {
+    width: 100%;
+    height: auto;
+}
+
+.cameraInfo {
+    padding: 1rem;
+    text-align: center;
+}
+
+@media (min-width: 600px) {
+    .cameraList {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .cameraList {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

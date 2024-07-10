@@ -1,0 +1,120 @@
+/* Navbar.module.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px 20px;
+  z-index: 10000;
+}
+
+.navbarLogo img {
+  height: 50px;
+  width: 50px;
+  border-radius: 35%;
+}
+
+.navbarLinks {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: #00c6ff;
+}
+
+.navDropdown {
+  position: relative;
+  z-index: 10000;
+}
+
+.dropdownToggle {
+  background: none;
+  border: none;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  z-index: 10000;
+}
+
+.dropdownToggle:hover {
+  color: #00c6ff;
+}
+
+.dropdownMenu {
+  display: none;
+  position: unset;
+  top: 100%;
+  left: 0;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 10px;
+  z-index: 1000;
+  
+}
+
+.navDropdown:hover .dropdownMenu {
+  display: block;
+}
+
+.dropdownItem {
+  text-decoration: none;
+  color: #1eff00;
+  display: block;
+  padding: 5px 10px;
+  transition: background 0.3s ease, color 0.3s ease;
+  
+}
+
+.dropdownItem:hover {
+  background: rgba(255, 255, 255, 0.3);
+  color: #000000;
+  
+}
+
+.profileAndSignIn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profileButton img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.navbarSignin {
+  background: #08ff31;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navbarSignin:hover {
+  background: #ff0202;
+}
